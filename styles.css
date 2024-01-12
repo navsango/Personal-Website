@@ -2,7 +2,7 @@ body{
    min-height: 100%;
    background-attachment: fixed;
    font-family: 'Lato', sans-serif;
-   background-image:url(Images/background.jpg);
+   background-image:url(background.jpg);
    background-size: cover;
 }
 
