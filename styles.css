@@ -92,7 +92,7 @@ body{
 .poto{
     height:93vh;
     width: 30% ;
-    background-image: url(Images/nsgimg.jpg);
+    background-image: url(nsgimg.jpg);
     background-size: cover;
     margin-top: 3vh;
     margin-left: 13%;
