@@ -1,0 +1,546 @@
+body{
+   min-height: 100%;
+   background-attachment: fixed;
+   font-family: 'Lato', sans-serif;
+   background-image:url(Images/background.jpg);
+   background-size: cover;
+}
+
+
+
+
+#home-nav{
+    height: 85vh;
+    width: 8%;
+    margin-top: 7vh;
+    margin-left: 5%;
+    position: absolute;
+    background-color:rgb(29,31,31);
+    box-shadow: 0px 0px 10px black;
+}
+
+#home-nav .a{
+    height:4rem;
+    width: 100%;
+    position: absolute;
+    font-size: 29px;
+    line-height: 1em;
+    font-weight: 700px;
+    font-family: 'Roboto', sans-serif;
+}
+#home-nav .nb{
+    top: 0;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items:end;
+}
+#home-nav .nb a{
+    text-decoration: none;
+    color: rgb(212,34,34);
+    font-size: 40px;
+    font-weight: 900; 
+    display: block;
+    cursor:pointer;
+    caret-color: transparent;
+}
+#home-nav .abt{
+    top: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-fav{
+    height: 20px;
+    cursor:pointer;
+    caret-color: transparent;
+    filter: grayscale(100%);
+}
+
+#home-nav .cont{
+    top: 44%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#home-nav .resm{
+    bottom: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#home-nav .dwn{
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home-nav .dwn a img{
+    cursor: pointer;
+    caret-color: transparent;
+}
+#home-nav .dwn a img:active{
+    height: 35px;
+}
+
+/* profile pic part */
+
+.poto{
+    height:93vh;
+    width: 30% ;
+    background-image: url(Images/nsgimg.jpg);
+    background-size: cover;
+    margin-top: 3vh;
+    margin-left: 13%;
+    position: absolute;
+    box-shadow: 0px 0px 5px 3px black;
+}
+.poto>.watermark{
+    position: absolute;
+    bottom: 30px;
+    height: 8rem;
+    width: 100%;
+}
+.poto>.watermark>.watermark-name{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.poto>.watermark>.watermark-name>h1{
+    margin: 0;
+    font-size: 48px;
+    color: white;
+    font-weight: 700px;
+    line-height: 1.2em;
+    font-family: 'Roboto', sans-serif;
+
+}
+.poto>.watermark>.watermark-prof{
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.poto>.watermark>.watermark-prof>h3{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400px;
+    color:rgb(212,34,34) ;
+    font-family: 'Roboto', sans-serif;
+}
+.poto>.watermark>.watermark-icons{
+    height: 2.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.poto>.watermark>.watermark-icons>a{
+    margin:auto 15px;
+    filter: contrast(0%);
+}
+.poto>.watermark>.watermark-icons>a:hover{
+    filter: none;
+}
+
+/* div transaction effect */
+
+
+
+@keyframes smooth-appear{
+    to{
+        margin-left: 43%;
+        opacity: 1;
+    }
+}
+
+.effect{
+    animation: smooth-appear 1s ease forwards;
+}
+
+
+/* main divs */
+
+/* div matter- about */
+
+
+/* fade in divs */
+
+.overlaytop{
+height: 10vh;
+width: 47%;
+z-index: 1;
+position: fixed;
+background: linear-gradient(to bottom, #1c1e1f 10%, rgba(28, 30, 31, 0));
+}
+.overlaybottom{
+    height: 10vh;
+    width: 47%;
+    z-index: 1;
+    position: fixed;
+    margin-top: 75vh;
+    background: linear-gradient(to top, #1c1e1f 25%, rgba(28, 30, 31, 0));
+ }
+.matr-abt{
+    height:85vh ;
+    width: 45%;
+    padding-left: 70px;
+    padding-right: 50px;
+    margin-top: 7vh;
+    margin-left: 5%;
+    position: absolute;
+    background-color:rgb(29,31,31);
+    overflow: auto;
+    z-index: -1;
+    opacity: 0;
+    box-shadow: 0px 0px 10px black;
+}
+.matr-abt::-webkit-scrollbar{
+    display: none; 
+ }
+ .matr-abt section{
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+ }
+.matr-abt section h1{
+    color: white;
+    margin-bottom: 0;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2em;
+    font-family: 'Roboto', sans-serif;
+}
+.matr-abt section h2{
+    display: inline;
+    padding-left: 15px;
+    margin-top: 40px;
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+    line-height: 1.2em;
+    font-family: 'Roboto', sans-serif;
+}
+.matr-abt section>h3{
+    font-size: larger;
+    color: rgb(212,34,34);
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+.matr-abt section>p{
+    color: rgb(140,141,142);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+hr{
+    height: 1px;
+    width: 100%;
+    border: none;
+    margin-top: 30px;
+    background-color: rgb(140,141,142);
+}
+
+/* div matter -contact */
+
+
+.matr-cont{
+    height:85vh ;
+    width: 45%;
+    padding-left: 70px;
+    padding-right: 50px;
+    margin-top: 7vh;
+    margin-left: 5%;
+    position: absolute;
+    background-color:rgb(29,31,31);
+    overflow: auto;
+    overflow-x: hidden;
+    z-index: -1;
+    opacity: 0;
+    box-shadow: 0px 0px 10px black;
+}
+.matr-cont::-webkit-scrollbar{
+display: none;
+}
+.matr-cont section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.matr-cont section>p{
+    color: rgb(140,141,142);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+.matr-cont section .map{
+    height: 21rem;
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px 5px black;
+}
+.matr-cont section table{
+    margin: auto;
+}
+.matr-cont section table p, a{
+    color: rgb(140,141,142);
+}
+.matr-cont section table a:hover{
+    color:rgb(212,34,34) ;
+}
+.matr-cont section h1{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.matr-cont section .ip{
+    height: 2.8rem;
+    width: 100%;
+    margin: 15px 0;
+    color: rgb(140,141,142);
+    background:none;
+    border: none;
+    border-bottom: 1px rgb(140,141,142) solid;
+    font-size: 18px;
+    line-height: 1.6em;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+.matr-cont section .ip:focus{
+
+    border-bottom: 1px rgb(212,34,34) solid;
+}
+.matr-cont section .ip-msg{
+    display: inline-block;
+    background:none;
+    width: 100%;
+    border: none;
+    color: rgb(140,141,142);
+    border-bottom: 1px rgb(140,141,142) solid;
+    padding-top: 10px;
+    outline: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6em;
+    font-family: 'Roboto', sans-serif;
+}
+.matr-cont section .ip-msg::-webkit-scrollbar{
+    display: none; 
+ }
+.matr-cont section .ip-msg:focus{
+    border-bottom: 1px rgb(212,34,34) solid;
+}
+.matr-cont section .ip-btn{
+    position: relative;
+    width: 150px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: rgb(212,34,34);
+    color: white;
+    border: none;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    overflow: hidden;
+    /* display: block; */
+}
+.matr-cont section .ip-btn:hover{
+    background-color: black;
+    color: rgb(212,34,34);
+}
+.matr-cont section .ip-btn:after{
+    content: "";
+    background-color:white;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+.matr-cont section .ip-btn:active:after{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+
+/* div matter resume */
+
+
+.matr-resm{
+    height:85vh ;
+    width: 45%;
+    padding-left: 70px;
+    padding-right: 50px;
+    margin-top: 7vh;
+    margin-left: 5%;
+    position: absolute;
+    background-color:rgb(29,31,31);
+    overflow: auto;
+    z-index: -1;
+    opacity: 0;
+    box-shadow: 0px 0px 10px black;
+}
+.matr-resm::-webkit-scrollbar{
+    display: none;
+}
+.matr-resm section{
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}
+.matr-resm section h1{
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2em;
+    font-family: 'Roboto', sans-serif;
+}
+.matr-resm section>h3{
+    margin-top: 10px;
+    color:rgb(212,34,34) ;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+
+.matr-resm section>p{
+    text-align: left;
+    color: rgb(140,141,142);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+.matr-resm section>.skill{
+    height: 4rem;
+    width: 100%;
+    margin-top: 23px;
+    margin-bottom: 10px;
+
+}
+.matr-resm section>.skill h3{
+    display: inline;
+    font-size: 36px;
+    color: white;
+    font-weight: 700;
+    line-height: 1.2em;
+    font-family: 'Roboto', sans-serif;
+
+}
+.matr-resm section>.progress{
+    height: 12rem;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.matr-resm section>.progress .subs{
+height: 3rem ;
+width: 100%;
+}
+.matr-resm section>.progress .name{
+    height: 2.7rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.matr-resm section>.progress .name>.sub-name{
+    position: relative;
+    left: 5px;
+    margin: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+.matr-resm section>.progress .name>.sub-perc{
+    position: absolute;
+    right: 55px;
+    color: rgb(212,34,34);
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.matr-resm section>.progress .level{
+    height: 0.3rem;
+    width: 100%;
+    background-color: rgb(140,141,142);
+}
+.java .level-achieved{
+    height: 0.3rem;
+    width: 91%;
+    background-color:rgb(212,34,34);
+}
+.j2ee .level-achieved{
+    height: 0.3rem;
+    width: 82%;
+    background-color:rgb(212,34,34);
+}
+.sql .level-achieved{
+    height: 0.3rem;
+    width: 90%;
+    background-color:rgb(212,34,34);
+}
+.web .level-achieved{
+    height: 0.3rem;
+    width: 85%;
+    background-color:rgb(212,34,34);
+}
+
+.matr-resm section table h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 700;
+    line-height: 1.2em;
+    font-family: 'Roboto', sans-serif;
+}
+.matr-resm section table h4{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    color: rgb(212,34,34);
+    font-family: 'Roboto', sans-serif;
+    }
+.matr-resm section table h3{
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 1.2em;
+   margin: 0;
+   color: white;
+   font-family: 'Roboto', sans-serif;
+}
+.matr-resm section table h5{
+    font-size: 12px;
+    margin: 0;
+    color: rgb(140,141,142);
+    font-family: 'Roboto', sans-serif;
+ }
+ .matr-resm section table p{
+    margin: 0;
+    margin-bottom: 20px;
+    color: rgb(140,141,142); 
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+ }
